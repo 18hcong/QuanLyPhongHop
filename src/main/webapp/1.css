@@ -1,0 +1,339 @@
+/* css cho nooij dung dropdown */
+
+.dropbtn {
+    background-color: rgb(51, 102, 255);
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtnuser {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500px;
+    font-size: 25px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: black;
+    cursor: hand;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index: 0;
+}
+
+.dropbtnuser:hover {
+    border: 1px solid #071982;
+    color: #80ffd3!important;
+}
+
+.dropbtnuser::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #071982;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow: 2px 0px 14px rgba(0, 0, 0, .6);
+}
+
+.dropbtnuser::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2, .95, .57, .99);
+    -moz-transition: all .4s cubic-bezier(.2, .95, .57, .99);
+    -o-transition: all .4s cubic-bezier(.2, .95, .57, .99);
+    transition: all .4s cubic-bezier(.2, .95, .57, .99);
+    box-shadow: 2px 0px 14px rgba(0, 0, 0, .6);
+}
+
+.dropbtnuser:hover::before,
+.btn1O:hover::before {
+    opacity: 1;
+    width: 116%;
+}
+
+.dropbtnuser:hover::after,
+.btn1O:hover::after {
+    opacity: 1;
+    width: 120%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(102, 204, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(51, 102, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(51, 102, 255);
+    border-radius: 50px;
+}
+
+.phanmot .ndtrai {
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.phanmot .ndphai {
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+
+/* end dropdown */
+
+.social-btns a:hover {
+    background-color: rgb(204, 255, 204);
+}
+
+.social-btns1 a:after {
+    background-color: rgb(204, 255, 204);
+    border-color: rgb(51, 102, 255);
+}
+
+
+/* css form */
+
+.formtren {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.formduoi {
+    margin-left: 70px;
+}
+
+.form-style-2 {
+    margin-top: 30px;
+    max-width: 1300px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+
+.form-style-2 label {
+    margin: 0px 0px 15px 0px;
+}
+
+.form-style-2-heading {
+    margin-top: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.form-style-2 label>span {
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.form-style-2 .select-field {
+    width: 175px;
+}
+
+.form-style-2 input.input-field,
+.form-style-2 .select-field {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    margin-right: 30px;
+}
+
+.form-style-2 .input-field:focus,
+.form-style-2 .select-field:focus {
+    border: 1px solid #0C0;
+}
+
+
+/* end css form  */
+
+input[type=submit] {
+    margin-left: 350px;
+    height: 30px;
+    padding: 0.2em 1em 0.2em 2.25em;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: #696666;
+    background: url(images/Th606mh.png) no-repeat scroll 0.75em 0.07em transparent;
+    background-size: 20px 50px;
+    border-radius: 2em;
+    border: 0.15em solid rgb(51, 102, 255);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    /* text-align: center; */
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: rgb(51, 102, 255);
+    border-color: rgb(51, 102, 255);
+    background-position: 0.75em bottom;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+input[type="submit"]:focus {
+    background-position: 2em -4em;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+/* Webfonts */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+/* * search/ *  */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+* {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.search {
+    margin: 20px;
+    margin-left: 600px;
+    margin-top: -30px;
+}
+
+.search>h3 {
+    font-weight: normal;
+}
+
+.search>h1,
+.search>h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.search>div {
+    display: inline-block;
+    position: relative;
+}
+
+.search>div:after {
+    content: "";
+    background: rgb(51, 102, 255);
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    /* right: 2px; */
+    transform: rotate(135deg);
+}
+
+.search>div>input {
+    color: rgb(51, 102, 255);
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px rgb(51, 102, 255);
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+}
+
+.search>div>input::placeholder {
+    color: rgb(51, 102, 255);
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+.search>div>input:focus::placeholder {
+    opacity: 1;
+}
+
+.search>div>input:focus,
+.search>div>input:not(:placeholder-shown) {
+    width: 250px;
+}
